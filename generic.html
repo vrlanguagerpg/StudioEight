@@ -30,35 +30,35 @@
 							<section id="content" class="main">
 								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
 
-																	<p>11/21/2022<br />
-																		<span class="dev-log">
-																		This week we focused on....
-																		</span>
-																	</p>
+								<p>11/21/2022<br />
+									<span class="dev-log">
+									This week we focused on....
+									</span>
+								</p>
 
-																	<p>11/14/2022<br />
-																		<span class="dev-log">
-																		&emsp; A problem with learning a new language is that the people around you may not speak that language aside from an educational setting, and you may not be able to use it in a casual scenario while not feeling self conscious about the way you speak. What if we could transport you to a different world where you could speak and practice this new language without feeling judged, and also have some fun? Because VR is often praised for its immersive qualities, we decided to utilize it to be create a safe environment for language immersion. <br />
-																		Players would be transported into a new world as a character in a community setting, where they would have to navigate the social challenges of speaking in a different language. Players would do quests for the community to progress the story, which would involve practice conversing in this new language. Throughout this experience they will learn this new language through interaction with items in the game(vocabulary), conversations with NPCs(speaking and reading), and progression through different quest lines.<br />
-																		Using Unreal plugins for natural language processing, we are able to give the user different dialogue options which enable us to evaluate how the player is progressing. Our target audience is focused towards schools, teachers, and people who want to learn a new language.<br />
-																		<!-- start dev log section -->
-																		&emsp;This week our group explored two possible prototypes for our final project, Abilliterate and Teledetectus. <br />
-																		&emsp;Abiliterate is a RPG in VR where you learn a new language as a wizard in an assimilating world while Teledetectus an online collaborative escape room game where players get to solve puzzles in real-time virtually across timezones that promote leadership skills. <br />
-																		&emsp;In Abiliterate, we worked on our core features: Choosing dialogue options with NPCs by saying the sentence aloud. We used a Speech Recognition plugin for Unreal and matched the output text against the dialogue options which is shown in our demo video. The result is promising as it works well in English. Some possible hardware limitation we realized is that a sensitive mic helps with getting more accurate output text.<br />
-																		In addition to this, we worked another core feature of identifying objects players collect throughout the game in the practice language. In our demo video,  we print out the names of collectibles the player picks up. In the future, this will be placed in a “dictionary”  with the translation and pronunciation. <br />
-																		There were some problems in other languages such as Chinese/Japanese(our desired language for players to learn) for this plugin, so we reached out to the plugin developers about this. The plugin developer responded saying that they fixed the issue and are currently waiting for Unreal Marketplace to approve the fix( hopefully soon as the fix patch was submitted 15 days ago). <br />
-																		&emsp;In Teledectus, we also tried working on our core feature: a shared AR space through Niantic’s Lightship SDK. One of the key features of Lightship is being able to set up a SharedAR experience between people; however, we had some issues with getting this to work on our end because of networking issues. Whenever a player tried to host a game, they would be timed out, so we decided to pivot. At this point, we realized this idea was not just limited to AR, but could also be done in VR, so we decided to look into SharedSpaces. SharedSpaces is an out-of-the-box solution to allow different VR players to join one VR world. The nice part of SharedSpaces is that it would manage this networking layer that we were struggling with in Lightship. However, we were also not able to set up SharedSpaces properly because the codebase was not up-to-date, we were not able to set-up Photon (a networking software) properly with their project source code. So, we ultimately pivoted to starting from scratch with a multiplayer VR game using Photon. This would essentially be a customized version of SharedSpaces. The demo shows two players in one VR space and would be used as a starting point for our VR Escape room. <br />
-																		&emsp;Lastly, we worked on story concepts and sketching out environment concepts.
-																	</span>
-																		</p>
-																		<iframe width='500' height='294' src="https://www.youtube.com/embed/Vms3nAPo_TM?&theme=dark&autohide=2"frameborder="0"></iframe><div style='font-size: 0.8em'><a href='http://codegena.com/generator/Youtube-Embed-Code-Generator.html'></a></div>
-																		<iframe width='500' height='294' src="https://www.youtube.com/embed/Fjs1T0uYuc8?&theme=dark&autohide=2"frameborder="0"></iframe><div style='font-size: 0.8em'><a href='http://codegena.com/generator/Youtube-Embed-Code-Generator.html'></a></div>
+								<p>11/14/2022<br />
+									<span class="dev-log">
+									&emsp; A problem with learning a new language is that the people around you may not speak that language aside from an educational setting, and you may not be able to use it in a casual scenario while not feeling self conscious about the way you speak. What if we could transport you to a different world where you could speak and practice this new language without feeling judged, and also have some fun? Because VR is often praised for its immersive qualities, we decided to utilize it to be create a safe environment for language immersion. <br />
+									Players would be transported into a new world as a character in a community setting, where they would have to navigate the social challenges of speaking in a different language. Players would do quests for the community to progress the story, which would involve practice conversing in this new language. Throughout this experience they will learn this new language through interaction with items in the game(vocabulary), conversations with NPCs(speaking and reading), and progression through different quest lines.<br />
+									Using Unreal plugins for natural language processing, we are able to give the user different dialogue options which enable us to evaluate how the player is progressing. Our target audience is focused towards schools, teachers, and people who want to learn a new language.<br />
+									<!-- start dev log section -->
+									&emsp;This week our group explored two possible prototypes for our final project, Abilliterate and Teledetectus. <br />
+									&emsp;Abiliterate is a RPG in VR where you learn a new language as a wizard in an assimilating world while Teledetectus an online collaborative escape room game where players get to solve puzzles in real-time virtually across timezones that promote leadership skills. <br />
+									&emsp;In Abiliterate, we worked on our core features: Choosing dialogue options with NPCs by saying the sentence aloud. We used a Speech Recognition plugin for Unreal and matched the output text against the dialogue options which is shown in our demo video. The result is promising as it works well in English. Some possible hardware limitation we realized is that a sensitive mic helps with getting more accurate output text.<br />
+									In addition to this, we worked another core feature of identifying objects players collect throughout the game in the practice language. In our demo video,  we print out the names of collectibles the player picks up. In the future, this will be placed in a “dictionary”  with the translation and pronunciation. <br />
+									There were some problems in other languages such as Chinese/Japanese(our desired language for players to learn) for this plugin, so we reached out to the plugin developers about this. The plugin developer responded saying that they fixed the issue and are currently waiting for Unreal Marketplace to approve the fix( hopefully soon as the fix patch was submitted 15 days ago). <br />
+									&emsp;In Teledectus, we also tried working on our core feature: a shared AR space through Niantic’s Lightship SDK. One of the key features of Lightship is being able to set up a SharedAR experience between people; however, we had some issues with getting this to work on our end because of networking issues. Whenever a player tried to host a game, they would be timed out, so we decided to pivot. At this point, we realized this idea was not just limited to AR, but could also be done in VR, so we decided to look into SharedSpaces. SharedSpaces is an out-of-the-box solution to allow different VR players to join one VR world. The nice part of SharedSpaces is that it would manage this networking layer that we were struggling with in Lightship. However, we were also not able to set up SharedSpaces properly because the codebase was not up-to-date, we were not able to set-up Photon (a networking software) properly with their project source code. So, we ultimately pivoted to starting from scratch with a multiplayer VR game using Photon. This would essentially be a customized version of SharedSpaces. The demo shows two players in one VR space and would be used as a starting point for our VR Escape room. <br />
+									&emsp;Lastly, we worked on story concepts and sketching out environment concepts.
+								</span>
+									</p>
+									<iframe width='500' height='294' src="https://www.youtube.com/embed/Vms3nAPo_TM?&theme=dark&autohide=2"frameborder="0"></iframe><div style='font-size: 0.8em'><a href='http://codegena.com/generator/Youtube-Embed-Code-Generator.html'></a></div>
+									<iframe width='500' height='294' src="https://www.youtube.com/embed/Fjs1T0uYuc8?&theme=dark&autohide=2"frameborder="0"></iframe><div style='font-size: 0.8em'><a href='http://codegena.com/generator/Youtube-Embed-Code-Generator.html'></a></div>
 							</section>
 
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+					<!-- <footer id="footer">
 						<section>
 							<h2>Aliquam sed mauris</h2>
 							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
@@ -85,7 +85,7 @@
 							</ul>
 						</section>
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					</footer> -->
 
 			</div>
 
