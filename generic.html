@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Stellar by HTML5 UP</title>
+		<title>Villa Dev Logs</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,8 +19,8 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Generic</h1>
-						<p>Ipsum dolor sit amet nullam</p>
+						<h1>Development Logs</h1>
+						<!-- <p>Ipsum dolor sit amet nullam</p> -->
 					</header>
 
 				<!-- Main -->
@@ -29,11 +29,30 @@
 						<!-- Content -->
 							<section id="content" class="main">
 								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-								<h2>Magna feugiat lorem</h2>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-								<h2>Tempus veroeros</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+
+																	<p>11/21/2022<br />
+																		<span class="dev-log">
+																		This week we focused on....
+																		</span>
+																	</p>
+
+																	<p>11/14/2022<br />
+																		<span class="dev-log">
+																		&emsp; A problem with learning a new language is that the people around you may not speak that language aside from an educational setting, and you may not be able to use it in a casual scenario while not feeling self conscious about the way you speak. What if we could transport you to a different world where you could speak and practice this new language without feeling judged, and also have some fun? Because VR is often praised for its immersive qualities, we decided to utilize it to be create a safe environment for language immersion. <br />
+																		Players would be transported into a new world as a character in a community setting, where they would have to navigate the social challenges of speaking in a different language. Players would do quests for the community to progress the story, which would involve practice conversing in this new language. Throughout this experience they will learn this new language through interaction with items in the game(vocabulary), conversations with NPCs(speaking and reading), and progression through different quest lines.<br />
+																		Using Unreal plugins for natural language processing, we are able to give the user different dialogue options which enable us to evaluate how the player is progressing. Our target audience is focused towards schools, teachers, and people who want to learn a new language.<br />
+																		<!-- start dev log section -->
+																		&emsp;This week our group explored two possible prototypes for our final project, Abilliterate and Teledetectus. <br />
+																		&emsp;Abiliterate is a RPG in VR where you learn a new language as a wizard in an assimilating world while Teledetectus an online collaborative escape room game where players get to solve puzzles in real-time virtually across timezones that promote leadership skills. <br />
+																		&emsp;In Abiliterate, we worked on our core features: Choosing dialogue options with NPCs by saying the sentence aloud. We used a Speech Recognition plugin for Unreal and matched the output text against the dialogue options which is shown in our demo video. The result is promising as it works well in English. Some possible hardware limitation we realized is that a sensitive mic helps with getting more accurate output text.<br />
+																		In addition to this, we worked another core feature of identifying objects players collect throughout the game in the practice language. In our demo video,  we print out the names of collectibles the player picks up. In the future, this will be placed in a “dictionary”  with the translation and pronunciation. <br />
+																		There were some problems in other languages such as Chinese/Japanese(our desired language for players to learn) for this plugin, so we reached out to the plugin developers about this. The plugin developer responded saying that they fixed the issue and are currently waiting for Unreal Marketplace to approve the fix( hopefully soon as the fix patch was submitted 15 days ago). <br />
+																		&emsp;In Teledectus, we also tried working on our core feature: a shared AR space through Niantic’s Lightship SDK. One of the key features of Lightship is being able to set up a SharedAR experience between people; however, we had some issues with getting this to work on our end because of networking issues. Whenever a player tried to host a game, they would be timed out, so we decided to pivot. At this point, we realized this idea was not just limited to AR, but could also be done in VR, so we decided to look into SharedSpaces. SharedSpaces is an out-of-the-box solution to allow different VR players to join one VR world. The nice part of SharedSpaces is that it would manage this networking layer that we were struggling with in Lightship. However, we were also not able to set up SharedSpaces properly because the codebase was not up-to-date, we were not able to set-up Photon (a networking software) properly with their project source code. So, we ultimately pivoted to starting from scratch with a multiplayer VR game using Photon. This would essentially be a customized version of SharedSpaces. The demo shows two players in one VR space and would be used as a starting point for our VR Escape room. <br />
+																		&emsp;Lastly, we worked on story concepts and sketching out environment concepts.
+																	</span>
+																		</p>
+																		<iframe width='500' height='294' src="https://www.youtube.com/embed/Vms3nAPo_TM?&theme=dark&autohide=2"frameborder="0"></iframe><div style='font-size: 0.8em'><a href='http://codegena.com/generator/Youtube-Embed-Code-Generator.html'></a></div>
+																		<iframe width='500' height='294' src="https://www.youtube.com/embed/Fjs1T0uYuc8?&theme=dark&autohide=2"frameborder="0"></iframe><div style='font-size: 0.8em'><a href='http://codegena.com/generator/Youtube-Embed-Code-Generator.html'></a></div>
 							</section>
 
 					</div>
