@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>VILLA VR DevLogs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Development Logs</h1>
+						<!-- <p>Ipsum dolor sit amet nullam</p> -->
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="images/498_web_header.png" alt="" /></span>
+								<p>12/5/2022<br />
+									TODO: Add devlog
+								<br/><p>11/21/2022<br />
+									<span class="dev-log">
+This week, we decided to move away from the VR Escape Room project and fully focus on the VR Language RPG project. Our decision was based on our research into the core technical functionalities of both projects. If we were to pursue the VR Escape Room, we would likely need an extra week of development to further look into the networking behind the shared VR/multiplayer experience as there is currently very limited documentation online. Given these constraints and limitations on time, we came to the conclusion of pursuing the VR Language RPG project. We also believe that this combination of educational, VR, and RPG would create a novel solution to language immersion and encourage more gamified educational content in VR in a fun and exciting way. If we are successful in marketing this to schools, teachers, as well as individuals and provide an exciting educational experience, future language immersion games with more expansive vocabulary or in other languages can be made for our audience, ensuring the studio’s future.
+<br><br/>
+On the technical side, we created an inventory menu UI that the player can access by turning their wrist and looking towards it. It has five tabs: found items, alphabet list, learned words, quest, and past dialogue. Each tab can display up to five lines of text and the user can click the arrow buttons to go between pages. The selected menu is colored red with white text. The non-selected menus are dark grey with light grey text.
+<br></br>
+Here is also a demo of the Found Items tab of the menu UI. Being able to pick up and interact with objects provides a more visceral experience when learning vocabulary and will aid the player in remembering vocabulary words. This is one of our advantages as a VR RPG over our competitors in that RPG elements such as item collection can give our players an experience they will remember better. In the next iterations, we plan on adding buttons to this UI to hear vocabulary word pronunciation on demand.
+</span><br/>
+	<iframe width='500' height='294' src="https://www.youtube.com/embed/3gZko-PnaQ8?&theme=dark&autohide=2"frameborder="0"></iframe><div style='font-size: 0.8em'></div><br/>
+	<span class="dev-log">
+		In addition to this, we have polished the Dialogue system and UI. It was structured in a way that would be able to take care of a typical RPG’s dialogue needs, which usually would take the form of a graph due to dialogue options. There are buttons in place that will be implemented for re-listening to dialogue said by the NPC, hearing your dialogue options so you can repeat them, as well as the translation of your dialogue options. We will also get voice acting for our NPCs in a future iteration. Here is a demo of the system where an NPC teaches a player some words:
+		</span><br/>
+	<iframe width='500' height='294' src="https://www.youtube.com/embed/ewSJqOU8n6A?&theme=dark&autohide=2"frameborder="0"></iframe><div style='font-size: 0.8em'></div><br/>
+		<span class="dev-log">
+	We also worked on creating 3D modeling assets, animating them, and blocking out our landscape/preparing shaders. Currently, the player is able to teleport around a landscape that we created in the VR headset and explore the house, hilly scene, water, and village. We have also created several different animations in Mixamo with the Cat NPC model.
+		</span>
+	<a href='https://drive.google.com/drive/folders/1ejBY0B5vVjQkZ4Z-3dzo1kiKiI06TD7X?usp=sharing'><span class="dev-log"><b>Check out our hand-created assets by clicking here!</b></span></a><span class="dev-log">
+		In terms of our planned product, we have constructed a language lesson plan incorporated with interactable dialogues and story. We believe that this is an advantage we have compared to our competitors, which is a story the users can invest into when using our application to learn a new language. In VILLA, we also plan to have the villagers speak entirely of the language that our users want to learn, with the player’s mascot translating everything that the player has not learned from our application yet. We believe that exposing the users to more advanced terms without requiring them to learn them at the early stage is beneficial in the long run.
+		To verify our design choices and motivation behind them fits with demand in language learning. We contacted Mayumi Oka, a retired Japanese instructor who used to be the dean of the Japanese department of the University of Michigan. She is a renowned instructor in the Japanese teaching community, especially in reading and writing, as well as a textbook writer. We will be interviewing her on Monday night to hopefully get some insight from her and hopefully improve our application.
+
+									</span>
+								</p>
+
+								<br/><p>11/14/2022<br />
+									<span class="dev-log">
+									This week our group explored two possible prototypes for our final project, Abilliterate and Teledetectus.
+									Abiliterate is a RPG in VR where you learn a new language as a wizard in an assimilating world while Teledetectus an online collaborative escape room game where players get to solve puzzles in real-time virtually across timezones that promote leadership skills. <br /> <br />
+									In Abiliterate, we worked on our core features: Choosing dialogue options with NPCs by saying the sentence aloud. We used a Speech Recognition plugin for Unreal and matched the output text against the dialogue options which is shown in our demo video. The result is promising as it works well in English. Some possible hardware limitation we realized is that a sensitive mic helps with getting more accurate output text.
+									In addition to this, we worked another core feature of identifying objects players collect throughout the game in the practice language. In our demo video,  we print out the names of collectibles the player picks up. In the future, this will be placed in a “dictionary”  with the translation and pronunciation.
+									There were some problems in other languages such as Chinese/Japanese(our desired language for players to learn) for this plugin, so we reached out to the plugin developers about this. The plugin developer responded saying that they fixed the issue and are currently waiting for Unreal Marketplace to approve the fix( hopefully soon as the fix patch was submitted 15 days ago). <br /><br/>
+									In Teledectus, we also tried working on our core feature: a shared AR space through Niantic’s Lightship SDK. One of the key features of Lightship is being able to set up a SharedAR experience between people; however, we had some issues with getting this to work on our end because of networking issues. Whenever a player tried to host a game, they would be timed out, so we decided to pivot. At this point, we realized this idea was not just limited to AR, but could also be done in VR, so we decided to look into SharedSpaces. SharedSpaces is an out-of-the-box solution to allow different VR players to join one VR world. The nice part of SharedSpaces is that it would manage this networking layer that we were struggling with in Lightship. However, we were also not able to set up SharedSpaces properly because the codebase was not up-to-date, we were not able to set-up Photon (a networking software) properly with their project source code. So, we ultimately pivoted to starting from scratch with a multiplayer VR game using Photon. This would essentially be a customized version of SharedSpaces. The demo shows two players in one VR space and would be used as a starting point for our VR Escape room. <br /><br/>
+									Lastly, we worked on story concepts and sketching out environment concepts. <br><br>
+									<!--A problem with learning a new language is that the people around you may not speak that language aside from an educational setting, and you may not be able to use it in a casual scenario while not feeling self conscious about the way you speak. What if we could transport you to a different world where you could speak and practice this new language without feeling judged, and also have some fun? Because VR is often praised for its immersive qualities, we decided to utilize it to be create a safe environment for language immersion. Players would be transported into a new world as a character in a community setting, where they would have to navigate the social challenges of speaking in a different language. Players would do quests for the community to progress the story, which would involve practice conversing in this new language. Throughout this experience they will learn this new language through interaction with items in the game(vocabulary), conversations with NPCs(speaking and reading), and progression through different quest lines. -->
+									<!--Using Unreal plugins for natural language processing, we are able to give the user different dialogue options which enable us to evaluate how the player is progressing. Our target audience is focused towards schools, teachers, and people who want to learn a new language.<br /><br /> -->
+									<!-- start dev log section -->
+
+
+								</span>
+									</p>
+									<iframe width='500' height='294' src="https://www.youtube.com/embed/Vms3nAPo_TM?&theme=dark&autohide=2"frameborder="0"></iframe><div style='font-size: 0.8em'><a href='http://codegena.com/generator/Youtube-Embed-Code-Generator.html'></a></div>
+									<iframe width='500' height='294' src="https://www.youtube.com/embed/Fjs1T0uYuc8?&theme=dark&autohide=2"frameborder="0"></iframe><div style='font-size: 0.8em'><a href='http://codegena.com/generator/Youtube-Embed-Code-Generator.html'></a></div>
+							</section>
+
+					</div>
+
+					<footer id="footer">
+						<section>
+							<!-- <h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+							</ul> -->
+						</section>
+						<section>
+	<!--							<h2>Etiam feugiat</h2>-->
+	<!--							<dl class="alt">-->
+	<!--								<dt>Address</dt>-->
+	<!--								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>-->
+	<!--								<dt>Phone</dt>-->
+	<!--								<dd>(000) 000-0000 x 0000</dd>-->
+	<!--								<dt>Email</dt>-->
+	<!--								<dd><a href="#">information@untitled.tld</a></dd>-->
+	<!--							</dl>-->
+	<!--							<ul class="icons">-->
+	<!--								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>-->
+	<!--								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>-->
+	<!--								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>-->
+	<!--								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>-->
+	<!--								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>-->
+	<!--							</ul>-->
+						</section>
+						<!--<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>-->
+						<p class="copyright">&copy; VILLA 2022 | vrlanguagerpg@gmail.com</p>
+					</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
