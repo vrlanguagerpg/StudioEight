@@ -106,7 +106,7 @@ input, select, textarea {
 		background-attachment: fixed;
 		background-color: #464646;
 		/*TODO: Replace background animation with a gif showing a video gif of the world in ue5 */
-		background-image: url("images/VRWorld.gif");
+		background-image: url("/assets/css/images/VRWorld.gif");
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
